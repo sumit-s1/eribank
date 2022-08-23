@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661251510302' stop='1661251570322'>
+    <name>Positive Test cases for EriBank</name>
+    <title>Positive Test cases for EriBank</title>
+    <test-cases>
+        <test-case start='1661251510303' status='broken' stop='1661251570320'>
+            <name>Successful Sign In To The Account</name>
+            <title>Successful Sign In To The Account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554 11.0-11'/>
+            </parameters>
+            <steps>
+                <step start='1661251510309' status='passed' stop='1661251561279'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='d6205335-9a89-4871-a5ac-4fec01d57e86-attachment.json' type='application/json' size='72'/>
+                        <attachment title='Response' source='1b2ac23d-dd18-41d7-8c6e-f7a38940059d-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661251561306' status='passed' stop='1661251562080'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='ceef5fe5-b82b-4ff3-96c0-72a12b09374e-attachment.json' type='application/json' size='72'/>
+                        <attachment title='Response' source='9d20ede0-1896-427e-9252-1e48ae14a428-attachment.json' type='application/json' size='148'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1661251562096' status='broken' stop='1661251570319'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='dcf314e9-8113-4271-bd8c-c19d69dcc1c3-attachment.json' type='application/json' size='80'/>
+                    </attachments>
+                    <steps>
+                        <step start='1661251562100' status='passed' stop='1661251562674'>
+                            <name>POST /session/:sessionId/element/00000000-0000-0146-ffff-ffff00000396/click</name>
+                            <title>POST /session/:sessionId/element/00000000-0000-0146-ffff-ffff00000396/click</title>
+                            <attachments>
+                                <attachment title='Response' source='173b3062-f05c-4207-bf97-bc1a188d1a78-attachment.json' type='application/json' size='814'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1661251562686' status='passed' stop='1661251562858'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='1b41f7f1-c22a-44a6-81f8-dfe543ff9b39-attachment.json' type='application/json' size='80'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "Positive Test cases for EriBank Successful Sign In To The Account" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\mobilefw_sca\test\test.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "Positive Test cases for EriBank Successful Sign In To The Account" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\mobilefw_sca\test\test.js)
+                    at createTimeoutError (E:\mobilefw_sca\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (E:\mobilefw_sca\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (E:\mobilefw_sca\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+            <description type='text'>User should be able to login to the account and verify the home page</description>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

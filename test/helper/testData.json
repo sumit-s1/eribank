@@ -1,0 +1,8 @@
+{
+"login":{
+        "userName":"company",
+        "pwd": "company",
+        "incorrectPwd": "company1234",
+        "homeText": "Your balance is: 100.00$"
+    }
+}
