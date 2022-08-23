@@ -1,5 +1,5 @@
 # eribank
-Script to Automate Login feature on eriBank app
+Script to Automate Login feature on eriBank app (https://code.google.com/archive/p/eribank/)
 
 Script contains implementation of login scenarios on the eriBank App
 
