@@ -1,20 +1,20 @@
 const SELECTORS = {
-    VIEW_CART_ANDROID: '"//android.view.ViewGroup[@content-desc="cart badge"]/android.widget.ImageView"',
+    VIEW_CART_ANDROID: '//android.view.ViewGroup[@content-desc="cart badge"]/android.widget.ImageView',
     EMPTY_CART_ANDROID: '//android.widget.TextView[@text="Go Shopping"]',
+    VIEW_CART_IOS: '//xyz',
+    EMPTY_CART_IOS: '//XYZ',
 };
 
 
-class cartScreen {
-    get cartButton() {
-        return $(SELECTORS.VIEW_CART_ANDROID);
-    }
+const cartScreen = {
+    get cartButton() {        
+        //This will check the platform and based on that it will fetch the appropriate selector
+        return $(driver.isAndroid ? SELECTORS.VIEW_CART_ANDROID: SELECTORS.VIEW_CART_IOS);
+    },
 
     get goShopping() {
-        return $(SELECTORS.EMPTY_CART_ANDROID);
+        return $(driver.isAndroid ? SELECTORS.EMPTY_CART_ANDROID: SELECTORS.VIEW_CART_IOS);
     }
 }
 
-//export default new cartScreen();
-module.exports = class cartScreen {
-}
-
+module.exports = {cartScreen}
