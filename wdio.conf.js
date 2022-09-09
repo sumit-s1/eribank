@@ -22,7 +22,9 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/*.js'
+        //'./test/*.js'
+        './test/myDemoApp.js'
+        //'./test/eriBankTest.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -54,7 +56,8 @@ exports.config = {
         "platformName": "Android",
         "appium:platformVersion": "11.0",
         "appium:deviceName": "emulator-5554",
-        "appium:app": "C:/Users/Sumit/Downloads/EriBank.apk",    
+        //"appium:app": "C:/Users/Sumit/Downloads/EriBank.apk",
+        "appium:app": "C:/Users/Sumit/Downloads/Android-MyDemoAppRN.1.3.0.build-244.apk",     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -75,7 +78,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'warn',
+    logLevel: 'error',
     //
     // Set specific log levels per logger
     // loggers:

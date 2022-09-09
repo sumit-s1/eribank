@@ -1,20 +1,28 @@
 {
-    "android":{
-        "errPrompt":"//android.widget.Button[@text='OK']",
-        "userName": "//android.widget.EditText[@text='Username']",
-        "pwd": "//android.widget.EditText[@text='Password']",
-        "loginButton": "//android.widget.Button[@text='Login']",
-        "homePageText": "//android.view.View[contains(@text,'Your balance is')]",
-        "logOutButton": "//android.widget.Button[@text='Logout']"
+    "eribank":{
+        "android":{
+            "errPrompt":"//android.widget.Button[@text='OK']",
+            "userName": "//android.widget.EditText[@text='Username']",
+            "pwd": "//android.widget.EditText[@text='Password']",
+            "loginButton": "//android.widget.Button[@text='Login']",
+            "homePageText": "//android.view.View[contains(@text,'Your balance is')]",
+            "logOutButton": "//android.widget.Button[@text='Logout']"
+        },
+
+        "iOS":{
+            "sampleErrPrompt":"//ios.widget.Button[@text='OK']",
+            "sampleUserName": "//ios.widget.EditText[@text='Username']",
+            "samplePwd": "//ios.widget.EditText[@text='Password']",
+            "sampleLoginButton": "//ios.widget.Button[@text='Login']",
+            "sampleHomePageText": "//ios.view.View[contains(@text,'Your balance is')]",
+            "sampleLogOutButton": "//ios.widget.Button[@text='Logout']"
+        }
     },
-
-    "iOS":{
-        "sampleErrPrompt":"//ios.widget.Button[@text='OK']",
-        "sampleUserName": "//ios.widget.EditText[@text='Username']",
-        "samplePwd": "//ios.widget.EditText[@text='Password']",
-        "sampleLoginButton": "//ios.widget.Button[@text='Login']",
-        "sampleHomePageText": "//ios.view.View[contains(@text,'Your balance is')]",
-        "sampleLogOutButton": "//ios.widget.Button[@text='Logout']"
+    
+    "myDemoApp":{
+        "android":{
+            "viewCart": "//android.view.ViewGroup[@content-desc='cart badge']/android.widget.ImageView",
+            "emptyCart":"//android.widget.TextView[@text='Go Shopping']"
+        }
     }
-
 }
